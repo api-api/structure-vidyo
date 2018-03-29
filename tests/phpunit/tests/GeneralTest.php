@@ -9,6 +9,5 @@ class GeneralTests extends Vidyo_TestCase {
 		$request->set_param( 'name', 'testgroup1' );
 		$response = $this->apiapi->send_request( $request );
 		$params = $response->get_params();
-		print_r( $params );
 	}
 }
