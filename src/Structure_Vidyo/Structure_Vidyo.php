@@ -34,27 +34,27 @@ if ( ! class_exists( 'APIAPI\Structure_Vidyo\Structure_Vidyo' ) ) {
 
 			$this->authenticator = 'basic';
 
-			$this->routes['/usergroup'] = array(
+			$this->routes['/usergroups'] = array(
 				'methods' => array(
 					Method::GET  => array(
-						'description'          => 'Lists usergroups.',
+						'description'          => 'Lists usergroups',
 						'needs_authentication' => true,
 						'params'               => array(
 							'offset'          => array(
 								'description' => 'Offset.',
-								'type'        => 'int',
+								'type'        => 'integer',
 							),
 							'name' => array(
 								'description' => 'Group name',
 								'type'        => 'string',
 							),
-							'desc'         => array(
+								'desc'         => array(
 								'description' => 'Group description',
 								'type'        => 'string',
 							),
 							'limit'    => array(
 								'description' => 'Limits the number of results',
-								'type'        => 'int',
+								'type'        => 'integer',
 							),
 							'sort'     => array(
 								'description' => 'Order of results (desc/asc)',
@@ -64,9 +64,9 @@ if ( ! class_exists( 'APIAPI\Structure_Vidyo\Structure_Vidyo' ) ) {
 								'description' => 'Country code in ISO 3166 Alpha-2 format.',
 								'type'        => 'array',
 							)
-						),
+						)
 					)
-				),
+				)
 			);
 		}
 	}
