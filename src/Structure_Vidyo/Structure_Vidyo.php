@@ -65,6 +65,52 @@ if ( ! class_exists( 'APIAPI\Structure_Vidyo\Structure_Vidyo' ) ) {
 								'type'        => 'array',
 							)
 						)
+					),
+					Method::POST  => array(
+						'description'          => 'Adds a usergroup',
+						'needs_authentication' => true,
+						'request_data_type'    => 'json',
+						'params'               => array(
+							'id'          => array(
+								'description' => 'Group ID',
+								'type'        => 'integer',
+							),
+							'name'         => array(
+								'description' => 'Name of the group',
+								'type'        => 'string'
+							),
+							'description'         => array(
+								'description' => 'Description of the group',
+								'type'        => 'string'
+							),
+							'ahsduigzgdzgz'       => array(
+								'description' => 'Multiple IDs in an array.',
+								'type'        => 'array',
+								'items'       => array(
+									'description' => 'A single ID.',
+									'type'        => 'object',
+									'properties'  => array(
+
+									),
+								),
+							),
+							'ahsduaihsd'          => array(
+								'type'        => 'object',
+								'properties'  => array(
+									'id'          => array(
+										'description' => 'blabla',
+										'type'        => 'integer',
+									),
+									'name'        => array(
+										'description' => 'asdadsd',
+										'type'        => 'object',
+										'properties'  => array(
+
+										),
+									),
+								),
+							),
+						)
 					)
 				)
 			);

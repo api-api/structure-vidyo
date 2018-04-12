@@ -22,8 +22,8 @@ class Vidyo_TestCase extends Structure_TestCase {
 				'authentication_data' => array(
 					'username'    => $username,
 					'password' => $password,
-				),
-			),
+				)
+			)
 		);
 
 		$this->apiapi = apiapi( 'test-api', $config );
